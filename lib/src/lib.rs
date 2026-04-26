@@ -1,3 +1,7 @@
-pub fn banner(id: u32) -> String {
-    format!("Project Euler #{id:04}")
-}
+#![feature(iter_map_windows)]
+
+pub mod prelude;
+pub mod primes;
+pub mod general;
+
+pub use prelude::banner;
